@@ -1,0 +1,12 @@
+/*实现函数 ToLowerCase()，该函数接收一个字符串参数 str，
+并将该字符串中的大写字母转换成小写字母，之后返回新的字符串。 */
+char * toLowerCase(char * str){
+    char* p=str;
+    for(p=str;*p!='\0';p++){
+        if((int)*p<91&&(int)*p>64){
+            *p=(int)*p+32;
+        }
+    }
+    return str;
+
+}
